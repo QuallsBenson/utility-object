@@ -1,0 +1,22 @@
+{
+    "name": "designplug/object",
+    "description": "Utility Classes for handling objects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ric Anthony Lee",
+            "email": "ricanthonylee@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-0": {
+        "Designplug\\Utility\\Object": ""
+      },
+      "files": [
+        "Designplug/Utility/Object/helpers.php"
+      ]
+
+
+    },
+    "target-dir": "Designplug/Utility/Object"
+}
