@@ -12,10 +12,26 @@ class ObjectWrapper{
 
   }
 
+  public static function wrap($object){
+
+    $wrapper = __CLASS__;
+
+    if(!is_array($object))
+      return new $wrapper($object);
+
+    $objectArray = array();
+
+    foreach($object as $tag => $staticObject)
+      $objectArray[$tag] = new $wrapper($staticObject);
+
+    return $objectArray;
+
+  }
+
   public function getName(){
 
     return $this->staticObject;
-    
+
   }
 
   public function getInstance(){
