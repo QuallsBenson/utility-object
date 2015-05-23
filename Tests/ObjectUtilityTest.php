@@ -1,7 +1,7 @@
 <?php
 
-use Designplug\Utility\Object\ObjectResolver;
-use Designplug\Utility\Object\ObjectWrapper;
+use Quallsbenson\Utility\Object\ObjectResolver;
+use Quallsbenson\Utility\Object\ObjectWrapper;
 
 require dirname(dirname(__FILE__)) .'/vendor/autoload.php';
 
@@ -10,10 +10,10 @@ class ObjectUtilityTest extends PHPUnit_Framework_TestCase{
       public function testObjectResolver(){
 
         $resolver = new ObjectResolver;
-        $resolver->addNamespace('\Designplug\Utility\Object\Tests');
+        $resolver->addNamespace('\Quallsbenson\Utility\Object\Tests');
         $class    = $resolver->resolve(array('ResolvedObjectNonExisting', 'ResolvedObject1'));
 
-        $this->assertEquals($class->getName(), 'Designplug\Utility\Object\Tests\ResolvedObject1');
+        $this->assertEquals($class->getName(), 'Quallsbenson\Utility\Object\Tests\ResolvedObject1');
 
         return $class;
 
@@ -26,7 +26,7 @@ class ObjectUtilityTest extends PHPUnit_Framework_TestCase{
 
       public function testObjectWrapper($objectWrapper){
 
-        $this->assertTrue($objectWrapper->getInstance() instanceof Designplug\Utility\Object\Tests\ResolvedObject1);
+        $this->assertTrue($objectWrapper->getInstance() instanceof Quallsbenson\Utility\Object\Tests\ResolvedObject1);
 
       }
 

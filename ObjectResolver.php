@@ -1,6 +1,6 @@
-<?php namespace Designplug\Utility\Object;
+<?php namespace Quallsbenson\Utility\Object;
 
-use Designplug\Utility\Object\ObjectWrapper;
+use Quallsbenson\Utility\Object\ObjectWrapper;
 
 class ObjectResolver{
 
@@ -9,10 +9,10 @@ class ObjectResolver{
   public function addNamespace($resolveNamespace){
 
     if(!is_array($resolveNamespace))
-    $resolveNamespace = (array) $resolveNamespace;
+      $resolveNamespace = (array) $resolveNamespace;
 
     foreach($resolveNamespace as $ns)
-    $this->resolveNamespaces[] = (string) trim(trim($ns), '\\') .'\\';
+      $this->resolveNamespaces[] = (string) trim(trim($ns), '\\') .'\\';
 
     return $this;
 
@@ -23,6 +23,7 @@ class ObjectResolver{
     if(!is_array($name)) $name = (array) $name;
 
     foreach($this->resolveNamespaces as $ns){
+
 
       foreach($name as $obj){
 

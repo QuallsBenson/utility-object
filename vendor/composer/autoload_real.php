@@ -53,7 +53,7 @@ class ComposerAutoloaderInitf6fe673a2e0a2599ea5162b7c6069bef
     public static function autoload($class)
     {
         $dir = dirname(dirname(__DIR__)) . '/';
-        $prefixes = array('Designplug\\Utility\\Object');
+        $prefixes = array('Quallsbenson\\Utility\\Object');
         foreach ($prefixes as $prefix) {
             if (0 !== strpos($class, $prefix)) {
                 continue;

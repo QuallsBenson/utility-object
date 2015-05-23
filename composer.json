@@ -1,5 +1,5 @@
 {
-    "name": "designplug/utility-object",
+    "name": "quallsbenson/utility-object",
     "description": "Utility Classes for handling objects",
     "license": "MIT",
     "authors": [
@@ -10,13 +10,13 @@
     ],
     "autoload": {
       "psr-0": {
-        "Designplug\\Utility\\Object": ""
+        "Quallsbenson\\Utility\\Object": ""
       },
       "files": [
-        "Designplug/Utility/Object/helpers.php"
+        "Quallsbenson/Utility/Object/helpers.php"
       ]
 
 
     },
-    "target-dir": "Designplug/Utility/Object"
+    "target-dir": "Quallsbenson/Utility/Object"
 }

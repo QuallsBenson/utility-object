@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Designplug\\Utility\\Object' => array($baseDir . '/'),
+    'Quallsbenson\\Utility\\Object' => array($baseDir . '/'),
 );

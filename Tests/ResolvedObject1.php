@@ -1,4 +1,4 @@
-<?php namespace Designplug\Utility\Object\Tests;
+<?php namespace Quallsbenson\Utility\Object\Tests;
 
 
 class ResolvedObject1{

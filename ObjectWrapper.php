@@ -1,4 +1,4 @@
-<?php namespace Designplug\Utility\Object;
+<?php namespace Quallsbenson\Utility\Object;
 
 
 class ObjectWrapper{
