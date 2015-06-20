@@ -26,7 +26,9 @@ class ObjectUtilityTest extends PHPUnit_Framework_TestCase{
 
       public function testObjectWrapper($objectWrapper){
 
-        $this->assertTrue($objectWrapper->getInstance() instanceof Quallsbenson\Utility\Object\Tests\ResolvedObject1);
+        $this->assertTrue($objectWrapper->getInstance( 1 ) instanceof Quallsbenson\Utility\Object\Tests\ResolvedObject1);
+
+        $this->assertTrue($objectWrapper->getSingleton( 1 ) instanceof Quallsbenson\Utility\Object\Tests\ResolvedObject1);
 
       }
 

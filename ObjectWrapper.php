@@ -53,7 +53,7 @@ class ObjectWrapper{
   public function getSingleton(){
 
     if(!isset($this->instance))
-      $this->instance = $this->getInstance();
+      $this->instance = call_user_func_array([$this, 'getInstance'], func_get_args() );
 
     return $this->instance;
 

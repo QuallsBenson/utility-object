@@ -3,7 +3,7 @@
 
 class ResolvedObject1{
 
-  public function __construct(){
+  public function __construct( $arg ){
     
   }
 
