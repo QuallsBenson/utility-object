@@ -8,7 +8,7 @@ class ObjectWrapper{
 
   public function __construct($object){
 
-    $this->staticObject = $object;
+    $this->setObject( $object );
 
   }
 
